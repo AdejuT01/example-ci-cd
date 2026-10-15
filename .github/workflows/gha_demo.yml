@@ -6,5 +6,5 @@ jobs:
     steps:
       - name: Build Step
         run: |
-          echo "A demo build"
-          echo "Welcome to GHA demo build"
+          echo "A demo build for ${{ vars.MY_NAME}}"
+          echo "Welcome to GHA demo build Mr ${{ vars.MY_NAME}}"
