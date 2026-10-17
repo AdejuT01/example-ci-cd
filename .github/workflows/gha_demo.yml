@@ -4,7 +4,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Build Step
-        run: |
-          echo "A demo build for ${{ vars.MY_NAME}}"
-          echo "Welcome to GHA demo build Mr ${{ vars.MY_NAME}}"
+     - name: Checkout the code
+       uses: actions/checkout@v4
+     - name: Print index.html file
+       run:  cat index.html
